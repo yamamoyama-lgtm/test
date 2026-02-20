@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>情報屋、あと七日で閉店 | テストプレイ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <h1>情報屋、あと七日で閉店</h1>
+        <p>スマホ向けテストプレイ（7日間経営ADV）</p>
+      </header>
+
+      <section class="stats" aria-label="経営指標">
+        <div><span>資金</span><strong id="money">8</strong></div>
+        <div><span>信用</span><strong id="trust">1</strong></div>
+        <div><span>品質</span><strong id="quality">1</strong></div>
+        <div><span>支出回数</span><strong id="spend">0</strong></div>
+      </section>
+
+      <section class="story">
+        <p id="day" class="day">DAY 1</p>
+        <p id="text" class="text"></p>
+      </section>
+
+      <section id="choices" class="choices"></section>
+
+      <section id="result" class="result hidden" aria-live="polite"></section>
+
+      <button id="restart" class="restart hidden">もう一度プレイ</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
